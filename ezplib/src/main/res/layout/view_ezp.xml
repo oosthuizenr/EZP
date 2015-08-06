@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="8dp">
+
+        <Spinner
+            android:id="@+id/spnCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/edtPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/spnCountry"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/edtCountryCode"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/edtCountryCode"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spnCountry"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="+1" />
+
+</RelativeLayout>
